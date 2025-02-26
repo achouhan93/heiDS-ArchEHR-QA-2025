@@ -2,7 +2,7 @@
 
 ## News
 
-* **Update 02/25/2024**: We are releasing the development set patient cases with associated MIMIC note IDs now (see [data/dev](data/dev)). We are currently working on making the note excerpts available via PhysioNet at the earliest.
+* **Update 02/25/2025**: We are releasing the development set patient cases with associated MIMIC note IDs now (see [data/dev](data/dev)). We are currently working on making the note excerpts available via PhysioNet at the earliest.
 
 ## Abstract
 
