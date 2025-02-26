@@ -1,0 +1,426 @@
+<annotations>
+    <case id="1">
+        <patient_narrative>
+I had severe abdomen pain and was hospitalised for 15 days in ICU, diagnoised with CBD sludge thereafter on udiliv. Doctor advised for ERCP. My question is if the sludge was there does not the medication help in flushing it out? Whether ERCP was the only cure?
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="141">
+My question is if the sludge was there does not the medication help in flushing it out? Whether ERCP was the only cure?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Why was ERCP recommended to him over continuing a medication-based treatment?
+        </clinician_question>
+    </case>
+    <case id="2">
+        <patient_narrative>
+I just wrote about my dad given multiple shots of lasciks after he was already so swelled his shin looked like it would burst open. Why would they give him so much. He was on oxygen and they took him off of the higher flow rate.
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="22">
+dad given multiple shots of lasciks after he was already so swelled his shin looked like it would burst open. Why would they give him so much.
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Why was he given lasix and his oxygen flow rate was reduced?
+        </clinician_question>
+    </case>
+    <case id="3">
+        <patient_narrative>
+my son fell and lost conciousness for a couple mins. we rushed him to hospital took a CT scan there was bleeding in the brain we got him admitted in icu and he was under observ.. they were givin him pain killers and injected to prevent him from vomitting yesterday i got him back home but he is continously irritated and has headache when awake what do ido
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="289">
+he is continously irritated and has headache when awake what do ido
+            </phrase>
+        </patient_question>
+        <clinician_question>
+What is the expected course of recovery for him?
+        </clinician_question>
+    </case>
+    <case id="4">
+        <patient_narrative>
+I am 48 years old. On February 20, I passed out, was taken to the hospital, and had two other episodes. I have chronic kidney disease with creatine around 1.5. I had anemia and hemoglobin was 10.3. I was in ICU 8 days and discharged in stable condition. My doctor performed a cardiac catherization. I had no increase in cardiac enzymes and an ECHO in the hospital showed 25% LVEF. Was this invasive, risky procedure necessary.
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="254">
+My doctor performed a cardiac catherization.
+            </phrase>
+            <phrase id="1" start_char_index="381">
+Was this invasive, risky procedure necessary.
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Why was cardiac catheterization recommended to the patient?
+        </clinician_question>
+    </case>
+    <case id="5">
+        <patient_narrative>
+I overdosed October 4th on trihexyphenidyl, thorazine, and cocaine. Ended up in icu with prolonged qt for 8 days. I have had chest pain in my left upper quadrant ever since. My doctor said it s related to muscle and bone. It s a dull to deep pain. Any ideas?
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="0">
+I overdosed October 4th on trihexyphenidyl, thorazine, and cocaine.
+            </phrase>
+            <phrase id="1" start_char_index="114">
+I have had chest pain in my left upper quadrant ever since.
+            </phrase>
+            <phrase id="2" start_char_index="248">
+Any ideas?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Is the pain connected to the overdose or something else?
+        </clinician_question>
+    </case>
+    <case id="6">
+        <patient_narrative>
+My dad has been killed recently by doctors treating him in icu for bacterial and fungal pneumonia. First my dad was admitted into ICU in August after seeing his lungs xray and he was put in ICU for 5 days then shifted to room then in 10 days he was discharged. After coming home we thought he was recovering well but on September 30 again he felt severe shortness in breath so when took to the Hispital, doctor said that the lung infection came again and this time its both bacterial and fungal and so my dad was directly admitted into ICU with ventilators support. The ICU patient dies on october 13 and the reason the doctor said is Sudden Cardiac Arrest and it can happen anytime. Other health complications of my dad are diabetes, hypertension, and AML. My question is if the Dr fail to diagonise the lung infection in time? I felt the culture test for presense of bacterial/fungal infection was done late and reports came very late.
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="758">
+My question is if the Dr fail to diagonise the lung infection in time?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Why did they find out later that he had fungal pneumonia?
+        </clinician_question>
+    </case>
+    <case id="7">
+        <patient_narrative>
+My mother n law had a surgery about 10 years ago, replacing all veins from top of leg to foot. Although that surgery has done well the doctors have had her on blood thinner ever since. Just recently she has gone to hospital due to a fall and they found a subarachnoid hemorrhage in the brain. They took her off the blood thinner, kept in icu for 3 weeks. We asked what would happen now to the original vein surgery (since stopping Coumadin). Are there any specific instructions about stopping Coumadin?
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="442">
+Are there any specific instructions about stopping Coumadin?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Are there specific instructions about blood thinners due to her subarachnoid brain hemorrhage?
+        </clinician_question>
+    </case>
+    <case id="8">
+        <patient_narrative>
+I developed jaundice and had liver failure.I was also placed on life support(I have no recollection and also inubated.This occurred in 2104 and I have never felt physically or emotionally healthly since this occurrance. I had no idea of how long I was in ICU,and when I did awaken several days later,I had no recall of anything. Shortly after I return home ,and weighting less,I noticed I was and still mispell words or write words backwards. Physically,I never gained weight,Inow weight a bit more.I also developed severe depression and exteme anxiety .I was informed that every vital organ was failing.My main question if I had posion in my bloodstream does it remain in my system? And I am very concerned about my writing capabilities. I would appreciate any advice.
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="604">
+My main question if I had posion in my bloodstream does it remain in my system? And I am very concerned about my writing capabilities.
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Will the poison damage to his body last and is the confusion related to it?
+        </clinician_question>
+    </case>
+    <case id="9">
+        <patient_narrative>
+I 8month delivered baby twins but the operation complicated.and I admitted icu jaundise and bleeding.docter side I live risk.baby yellow spread me and I have jaundice not normal jaundism. what treatment provide me at hospital.this is any problem me later
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="188">
+what treatment provide me at hospital.this is any problem me later
+            </phrase>
+        </patient_question>
+        <clinician_question>
+What treatments did she receive for complications during her delivery? Will the treatments cause any problems later?
+        </clinician_question>
+    </case>
+    <case id="10">
+        <patient_narrative>
+Hi There, my best friend who is 36 yrs old have a severe asthma attack, quick led to a heart attack and stopped breathing for 13 min before being resuscitated. After being in ICU for 6 days, doctors removed his breathing apparatus and he has been able to breathe independently since. I realize he most likely sustained some brain damage , but do you think he mte be able to continue breathing for long and survive?
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="284">
+I realize he most likely sustained some brain damage , but do you think he mte be able to continue breathing for long and survive?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Did she sustain any brain damage from the heart attack?
+        </clinician_question>
+    </case>
+    <case id="11">
+        <raw_question_annotations_from_dr_arabi>
+            <inferred_question_long>
+I went to the hospital with flu-like symptoms and was discharged after being diagnosed with viral meningitis. I'm feeling worse today, however. Is it expected?
+            </inferred_question_long>
+            <inferred_question_medium>
+I was diagnosed with viral meningitis and discharged from the hospital, but today I am feeling worse. Is it expected?
+            </inferred_question_medium>
+            <inferred_question_short>
+I am feeling worse today than when I left the hospital. Is it expected?
+            </inferred_question_short>
+            <core_question>
+Is it expected?
+            </core_question>
+        </raw_question_annotations_from_dr_arabi>
+        <patient_narrative>
+A friend went to the emergency room this past Monday morning with severe flu-like symptoms. On Thursday, she was diagnosed with meningitis. On Friday afternoon, it was determined to be viral, and she was rereleased with instructions to stay home and rest for 1 week. Yesterday she was beginning to feel better, but is not feeling as well today as yesterday. Is this fall back today a normal part of the recovery process, or Is it a sign of a possible relapse? Should she perhaps be gotten back to the hospitals? Thanks for your time.
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="358">
+Is this fall back today a normal part of the recovery process, or Is it a sign of a possible relapse?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+What is the expected course of her recovery?
+        </clinician_question>
+    </case>
+    <case id="12">
+        <raw_question_annotations_from_dr_arabi>
+            <inferred_question_long>
+I took my mom to the ER last week for stomach pain and her heart testing was reassuring. She still has the pain and it extends to her chest and back and keeps her up at night. What could be causing it?
+            </inferred_question_long>
+            <inferred_question_medium>
+My mom started to have stomach pain that extends to her chest and back and keeps her up at night. What could be causing it?
+            </inferred_question_medium>
+            <inferred_question_short>
+What is causing my mother's persistent stomach pain?
+            </inferred_question_short>
+            <core_question>
+What can cause persistent stomach pain?
+            </core_question>
+        </raw_question_annotations_from_dr_arabi>
+        <patient_narrative>
+My Mom just called me complaining of stomach pain that extends up to her chest and back. She had this same pain last week and I took her to the er. they checked her heart and said things were fine. Pain is bad enough to keep her up at night. What do you think?
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="37">
+stomach pain that extends up to her chest and back
+            </phrase>
+            <phrase id="1" start_char_index="242">
+What do you think?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+What can cause her persistent stomach pain?
+        </clinician_question>
+    </case>
+    <case id="13">
+        <raw_question_annotations_from_dr_arabi>
+            <inferred_question_long>
+I have peripheral neuropathy and was just diagnosed with a back tumor and 3 bulging discs. I see my doctor next week. I am not able to move my legs and I am in severe pain. What should I do?
+            </inferred_question_long>
+            <inferred_question_medium>
+I was just diagnosed with a back tumor and 3 bulging discs. What should I do if I cannot move my legs and I am in severe pain?
+            </inferred_question_medium>
+            <inferred_question_short>
+What should I do if I cannot move my legs and I am in severe pain?
+            </inferred_question_short>
+            <core_question>
+What should I do?
+            </core_question>
+        </raw_question_annotations_from_dr_arabi>
+        <patient_narrative>
+I have a tumor in my back and I have 3 disc bulge. I also have peripheral neuropathy. I went to the er and that's what they found. Now my legs can't move and I'm in severe pain. They told me to see my doctor in a week but he's on vacation. What can I do to help myself?
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="131">
+Now my legs can't move and I'm in severe pain.
+            </phrase>
+            <phrase id="1" start_char_index="240">
+What can I do to help myself?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+What should the patient do if she is in in pain and cannot move her legs?
+        </clinician_question>
+    </case>
+    <case id="14">
+        <raw_question_annotations_from_dr_arabi>
+            <inferred_question_long>
+I've had extreme pain in the left lower side directly after eating for a month. I went to the ER and had normal bloodwork and a normal urinalysis, abdominal ultrasound, and barium study. Could I have stomach cancer?
+            </inferred_question_long>
+            <inferred_question_medium>
+I've had extreme pain in the left lower side directly after eating for a month. I went to the ER and tests were normal. Could I have stomach cancer?
+            </inferred_question_medium>
+            <inferred_question_short>
+Could stomach cancer cause extreme pain in my lower left side directly after eating for the past month?
+            </inferred_question_short>
+            <core_question>
+Could I have stomach cancer?
+            </core_question>
+        </raw_question_annotations_from_dr_arabi>
+        <patient_narrative>
+I have had for almost one month extreme pain in my lower left side directly after eating. I&#8217;ve had, recently, a urinalysis, bloodwork, and been to ER for a ultrasonic scan of stomach, and a barium CT yesterday. They can t seem to find out what&#8217;s wrong, I am under lots of stress at work and thought it might be diverticulitis but hospital drs. yesterday said that is out and also any urinary tract infection is out. What would you say about cancer in the stomach?
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="416">
+What would you say about cancer in the stomach?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Was there any evidence for stomach cancer?
+        </clinician_question>
+    </case>
+    <case id="15">
+        <raw_question_annotations_from_dr_arabi>
+            <inferred_question_long>
+I was treated with antibiotics for a penis skin infection after I came with testicle pain and swelling. My pain went away but now I feel my testicles are small and my semen is clear. Could the infection have spread to my prostate and seminal vesicles? And could I become infertile?
+            </inferred_question_long>
+            <inferred_question_medium>
+I was treated with antibiotics for a penis skin infection. My pain went away but now I feel my testicles are small and my semen is clear. Could this mean I will be infertile?
+            </inferred_question_medium>
+            <inferred_question_short>
+I noticed changes in my semen after antibiotic treatment for a penis skin infection. Could I become infertile?
+            </inferred_question_short>
+            <core_question>
+Could I become infertile?
+            </core_question>
+        </raw_question_annotations_from_dr_arabi>
+        <patient_narrative>
+Hi. I came to the hospital with testicle pain and swelling and got antibiotics for a penis skin infection. My pain went away but now my testicles have become very weird hanging and it seems like they shrunk in size. I went to the ER and they told me it was all normal. I tried masturbating and when I ejaculated the sperm was very watery and there is no white just clear like water. Very little sticky. What&#8217;s really going on here? I&#8217;m afraid it might have spread to my prostate and seminal vesicles too... Does this mean I&#8217;m infertile?
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="4">
+I came to the hospital with testicle pain and swelling and got antibiotics for a penis skin infection.
+            </phrase>
+            <phrase id="1" start_char_index="432">
+I&#8217;m afraid it might have spread to my prostate and seminal vesicles too... Does this mean I&#8217;m infertile?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Did his infection spread to other anatomies causing infertility?
+        </clinician_question>
+    </case>
+    <case id="16">
+        <raw_question_annotations_from_dr_arabi>
+            <inferred_question_long>
+I have long-standing back pain that affects my life quite significantly. I often walk with a limp and my left leg is weak and the left foot is numb. Yesterday I started having dizziness which has continued till today, should I be concerned about a stroke?
+            </inferred_question_long>
+            <inferred_question_medium>
+I have long-standing back pain that affects my life quite significantly, and I often walk with a limp. I started feeling dizzy yesterday, should I be concerned about a stroke?
+            </inferred_question_medium>
+            <inferred_question_short>
+I have severe long-standing back pain and now I started feeling dizzy yesterday, should I be concerned about a stroke?
+            </inferred_question_short>
+            <core_question>
+Should I be concerned about a stroke?
+            </core_question>
+        </raw_question_annotations_from_dr_arabi>
+        <patient_narrative>
+I have central canal stenosis, compromise of the left paracentral thecal sac and left nerve root, facet hypertrophy/ligamentous flavum hypertrophy, bilateral inferior neural foraminal narrowing, and a paracentral disc protrusion. The pain presented in May and has worsened to its present state today. I can&#8217;t sleep, can&#8217;t sit up straight, can&#8217;t sit in my office chair at work for long periods, can&#8217;t even change my babies diaper without excruciating pain. The pain from sneezing and coughing is so bad I try to avoid doing this altogether. Now I walk with a limp at all times and my left leg is weak and the left foot is partially numb. Yesterday I started feeling dizzy throughout the day, almost passed out while sitting down. Dizziness has continued into today. Should I be concerned about a stroke?
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="230">
+The pain presented in May and has worsened to its present state today.
+            </phrase>
+            <phrase id="1" start_char_index="729">
+Dizziness has continued into today. Should I be concerned about a stroke?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Could her back pain and dizziness be concerning for a stroke?
+        </clinician_question>
+    </case>
+    <case id="17">
+        <raw_question_annotations_from_dr_arabi>
+            <inferred_question_long>
+I had a total thyroidectomy and take levothyroxine. I went to the ER yesterday for palpitations and anxiety and had a full panel of tests, but was told my palpitations are benign. I had normal tests a year ago. What can I do to relieve my symptoms?
+            </inferred_question_long>
+            <inferred_question_medium>
+I had a total thyroidectomy and take levothyroxine. I went to the ER yesterday for palpitations and anxiety but was told my palpitations are benign. What can I do to relieve my symptoms?
+            </inferred_question_medium>
+            <inferred_question_short>
+What can I do to relieve palpitations and anxiety?
+            </inferred_question_short>
+            <core_question>
+What can I do?
+            </core_question>
+        </raw_question_annotations_from_dr_arabi>
+        <patient_narrative>
+I spent yesterday in the ER with thumping heart beats i.e. palpitations. I had all blood work, a full panel, enzymes etc., EKG, chest x-ray, and TSH because I&#8217;ve had a total thyroidectomy. In October of last year, I had a walking stress test and all the same tests then, all of which are normal, showing no sign of any cardiac issues. My palpitations are benign, I&#8217;m told. Fine, how can I slow them or stop them without some antiarrhythmic meds? Of course, even though I&#8217;ve been told I&#8217;m fine, I feel them and sometimes worry which triggers the stress bug, then my chest gets tight, I have to take deep breaths to get out from under the stress. Is there anything I can do to relieve them? They really started when I started taking levothyroxine.
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="335">
+My palpitations are benign, I&#8217;m told. Fine, how can I slow them or stop them without some antiarrhythmic meds?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+What should he do to relieve palpitations and anxiety?
+        </clinician_question>
+    </case>
+    <case id="18">
+        <raw_question_annotations_from_dr_arabi>
+            <inferred_question_long>
+I was released from the hospital a week ago with no injuries after a tree hit my car. Now I have diarrhea and vomiting. Should I go back to the ER or wait for my doctor's appointment in a few days?
+            </inferred_question_long>
+            <inferred_question_medium>
+I was released from the hospital a week ago with no injuries after a tree hit my car. Now I have diarrhea and vomiting. Should I go back to the ER?
+            </inferred_question_medium>
+            <inferred_question_short>
+Should I go back to the ER if I have diarrhea and vomiting starting a week after a minor car accident?
+            </inferred_question_short>
+            <core_question>
+Should I go to the ER?
+            </core_question>
+        </raw_question_annotations_from_dr_arabi>
+        <patient_narrative>
+1 week ago I was in a car accident. Now I have diarrhea and vomiting. it wasn&#8217;t a car that hit us, it was a big tree that went through our radiator and engine. I had neck pain at hospital.  I seemed fine, but now I am vomiting and have diarrhea. Should i go back to ER? I have dr&#8217;s appointment on Thursday.
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="176">
+at hospital.  I seemed fine, but now I am vomiting and have diarrhea. Should i go back to ER?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Should he go back to the ER if he has diarrhea and vomiting?
+        </clinician_question>
+    </case>
+    <case id="19">
+        <raw_question_annotations_from_dr_arabi>
+            <inferred_question_long>
+After an ER visit for a bladder infection, I started to feel anxiety and rapid heartbeat. I have a history of panic attacks, but could these symptoms all be due to anxiety or is something wrong with my heart?
+            </inferred_question_long>
+            <inferred_question_medium>
+After an ER visit for a bladder infection, I started to feel anxiety and rapid heartbeat. Could these symptoms all be due to anxiety or is something wrong with my heart?
+            </inferred_question_medium>
+            <inferred_question_short>
+Can anxiety cause my rapid heartbeat or is something wrong with my heart?
+            </inferred_question_short>
+            <core_question>
+Are my symptoms due to anxiety?
+            </core_question>
+        </raw_question_annotations_from_dr_arabi>
+        <patient_narrative>
+I have a history of panic attacks. two weeks ago I went to ER for a bladder infection.  The doctor asked if I had irregular heartbeats or a-fib, which lead me getting very panicky. He decided to do an ekg, and it was normal, but after that day i keep thinking on it. now keep feeling rapid heartbeats and palpitations plus lot of chest discomfort. IT SCARES THE DAYLIGHTS of me. can all this be overthinking about what happened that day or can something be wrong with my heart ?
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="49">
+I went to ER for a bladder infection.  The doctor asked if I had irregular heartbeats or a-fib, which lead me getting very panicky
+            </phrase>
+            <phrase id="1" start_char_index="379">
+can all this be overthinking about what happened that day or can something be wrong with my heart ?
+            </phrase>
+        </patient_question>
+        <clinician_question>
+Are her symptoms related to anxiety or cardiovascular process?
+        </clinician_question>
+    </case>
+    <case id="20">
+        <raw_question_annotations_from_dr_arabi>
+            <inferred_question_long>
+My sister was hospitalized for a headache and a room spinning sensation. She was told it was a migraine and was given sumatriptan. The headache has since improved but she is still dizzy. Could migraine cause such a spinning sensation?
+            </inferred_question_long>
+            <inferred_question_medium>
+My sister was hospitalized for a headache and a room spinning sensation, and was told it was a migraine. Could migraine cause such a spinning sensation?
+            </inferred_question_medium>
+            <inferred_question_short>
+Could migraine cause a spinning sensation?
+            </inferred_question_short>
+            <core_question>
+Can migraine cause a spinning sensation?
+            </core_question>
+        </raw_question_annotations_from_dr_arabi>
+        <patient_narrative>
+Last week my 61 yr old sister woke up with a terrible headache and was not able to walk because she felt the room was spinning. She went to Intermountain Medical Center in Salt lake City, Utah and was admitted. After many tests, she was told she was having a migraine headache and was sent home with a prescription for sumatriptan. The headache has gotten better, but she is still very dizzy. So what is the dizziness from I never heard of a migraine that can cause your head to spin like that.
+        </patient_narrative>
+        <patient_question>
+            <phrase id="0" start_char_index="393">
+So what is the dizziness from I never heard of a migraine that can cause your head to spin like that.
+            </phrase>
+        </patient_question>
+        <clinician_question>
+How did they diagnose her with migraine for spinning sensation?
+        </clinician_question>
+    </case>
+</annotations>
