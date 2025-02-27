@@ -2,7 +2,8 @@
 
 ## News
 
-* **Update 02/25/2025**: We are releasing the development set patient cases with associated MIMIC note IDs now (see [data/dev](data/dev)). We are currently working on making the note excerpts available via PhysioNet at the earliest.
+* **February 26, 2025**: The full development set is now available on PhysioNet at [https://doi.org/10.13026/zzax-sy62](https://doi.org/10.13026/zzax-sy62).
+* **February 25, 2025**: We are releasing the development set patient cases with associated MIMIC note IDs instead of actual note excerpts (see [data/dev](data/dev)). We are working on making the full dataset with note excerpts available via PhysioNet as soon as possible.
 
 ## Abstract
 
@@ -154,6 +155,8 @@ Here, each dictionary in the JSON array has:
 
  
 # Evaluation
+(Tentative)
+
 ​​
 The submissions will be evaluated for both the quality of generated answers and the use of clinical evidence for grounding. The evidence sentences cited in the generated answers will be evaluated using Precision, Recall, and F1 Scores using a manually annotated ground truth set of evidence sentences. The alignment of sentences in the generated answer with the cited evidence sentence(s) from the clinical notes will be assessed using ROUGE [5], BERTScore [6], AlignScore [7], and MEDCON [8]. For each submission, an "Overall Score" for alignment is reported as the arithmetic mean of alignment scores using different metrics.
 
