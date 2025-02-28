@@ -139,20 +139,6 @@ Did she sustain any brain damage from the heart attack?
         </clinician_question>
     </case>
     <case id="11">
-        <raw_question_annotations_from_dr_arabi>
-            <inferred_question_long>
-I went to the hospital with flu-like symptoms and was discharged after being diagnosed with viral meningitis. I'm feeling worse today, however. Is it expected?
-            </inferred_question_long>
-            <inferred_question_medium>
-I was diagnosed with viral meningitis and discharged from the hospital, but today I am feeling worse. Is it expected?
-            </inferred_question_medium>
-            <inferred_question_short>
-I am feeling worse today than when I left the hospital. Is it expected?
-            </inferred_question_short>
-            <core_question>
-Is it expected?
-            </core_question>
-        </raw_question_annotations_from_dr_arabi>
         <patient_narrative>
 A friend went to the emergency room this past Monday morning with severe flu-like symptoms. On Thursday, she was diagnosed with meningitis. On Friday afternoon, it was determined to be viral, and she was rereleased with instructions to stay home and rest for 1 week. Yesterday she was beginning to feel better, but is not feeling as well today as yesterday. Is this fall back today a normal part of the recovery process, or Is it a sign of a possible relapse? Should she perhaps be gotten back to the hospitals? Thanks for your time.
         </patient_narrative>
@@ -166,20 +152,6 @@ What is the expected course of her recovery?
         </clinician_question>
     </case>
     <case id="12">
-        <raw_question_annotations_from_dr_arabi>
-            <inferred_question_long>
-I took my mom to the ER last week for stomach pain and her heart testing was reassuring. She still has the pain and it extends to her chest and back and keeps her up at night. What could be causing it?
-            </inferred_question_long>
-            <inferred_question_medium>
-My mom started to have stomach pain that extends to her chest and back and keeps her up at night. What could be causing it?
-            </inferred_question_medium>
-            <inferred_question_short>
-What is causing my mother's persistent stomach pain?
-            </inferred_question_short>
-            <core_question>
-What can cause persistent stomach pain?
-            </core_question>
-        </raw_question_annotations_from_dr_arabi>
         <patient_narrative>
 My Mom just called me complaining of stomach pain that extends up to her chest and back. She had this same pain last week and I took her to the er. they checked her heart and said things were fine. Pain is bad enough to keep her up at night. What do you think?
         </patient_narrative>
@@ -196,20 +168,6 @@ What can cause her persistent stomach pain?
         </clinician_question>
     </case>
     <case id="13">
-        <raw_question_annotations_from_dr_arabi>
-            <inferred_question_long>
-I have peripheral neuropathy and was just diagnosed with a back tumor and 3 bulging discs. I see my doctor next week. I am not able to move my legs and I am in severe pain. What should I do?
-            </inferred_question_long>
-            <inferred_question_medium>
-I was just diagnosed with a back tumor and 3 bulging discs. What should I do if I cannot move my legs and I am in severe pain?
-            </inferred_question_medium>
-            <inferred_question_short>
-What should I do if I cannot move my legs and I am in severe pain?
-            </inferred_question_short>
-            <core_question>
-What should I do?
-            </core_question>
-        </raw_question_annotations_from_dr_arabi>
         <patient_narrative>
 I have a tumor in my back and I have 3 disc bulge. I also have peripheral neuropathy. I went to the er and that's what they found. Now my legs can't move and I'm in severe pain. They told me to see my doctor in a week but he's on vacation. What can I do to help myself?
         </patient_narrative>
@@ -226,20 +184,6 @@ What should the patient do if she is in in pain and cannot move her legs?
         </clinician_question>
     </case>
     <case id="14">
-        <raw_question_annotations_from_dr_arabi>
-            <inferred_question_long>
-I've had extreme pain in the left lower side directly after eating for a month. I went to the ER and had normal bloodwork and a normal urinalysis, abdominal ultrasound, and barium study. Could I have stomach cancer?
-            </inferred_question_long>
-            <inferred_question_medium>
-I've had extreme pain in the left lower side directly after eating for a month. I went to the ER and tests were normal. Could I have stomach cancer?
-            </inferred_question_medium>
-            <inferred_question_short>
-Could stomach cancer cause extreme pain in my lower left side directly after eating for the past month?
-            </inferred_question_short>
-            <core_question>
-Could I have stomach cancer?
-            </core_question>
-        </raw_question_annotations_from_dr_arabi>
         <patient_narrative>
 I have had for almost one month extreme pain in my lower left side directly after eating. I&#8217;ve had, recently, a urinalysis, bloodwork, and been to ER for a ultrasonic scan of stomach, and a barium CT yesterday. They can t seem to find out what&#8217;s wrong, I am under lots of stress at work and thought it might be diverticulitis but hospital drs. yesterday said that is out and also any urinary tract infection is out. What would you say about cancer in the stomach?
         </patient_narrative>
@@ -253,20 +197,6 @@ Was there any evidence for stomach cancer?
         </clinician_question>
     </case>
     <case id="15">
-        <raw_question_annotations_from_dr_arabi>
-            <inferred_question_long>
-I was treated with antibiotics for a penis skin infection after I came with testicle pain and swelling. My pain went away but now I feel my testicles are small and my semen is clear. Could the infection have spread to my prostate and seminal vesicles? And could I become infertile?
-            </inferred_question_long>
-            <inferred_question_medium>
-I was treated with antibiotics for a penis skin infection. My pain went away but now I feel my testicles are small and my semen is clear. Could this mean I will be infertile?
-            </inferred_question_medium>
-            <inferred_question_short>
-I noticed changes in my semen after antibiotic treatment for a penis skin infection. Could I become infertile?
-            </inferred_question_short>
-            <core_question>
-Could I become infertile?
-            </core_question>
-        </raw_question_annotations_from_dr_arabi>
         <patient_narrative>
 Hi. I came to the hospital with testicle pain and swelling and got antibiotics for a penis skin infection. My pain went away but now my testicles have become very weird hanging and it seems like they shrunk in size. I went to the ER and they told me it was all normal. I tried masturbating and when I ejaculated the sperm was very watery and there is no white just clear like water. Very little sticky. What&#8217;s really going on here? I&#8217;m afraid it might have spread to my prostate and seminal vesicles too... Does this mean I&#8217;m infertile?
         </patient_narrative>
@@ -283,20 +213,6 @@ Did his infection spread to other anatomies causing infertility?
         </clinician_question>
     </case>
     <case id="16">
-        <raw_question_annotations_from_dr_arabi>
-            <inferred_question_long>
-I have long-standing back pain that affects my life quite significantly. I often walk with a limp and my left leg is weak and the left foot is numb. Yesterday I started having dizziness which has continued till today, should I be concerned about a stroke?
-            </inferred_question_long>
-            <inferred_question_medium>
-I have long-standing back pain that affects my life quite significantly, and I often walk with a limp. I started feeling dizzy yesterday, should I be concerned about a stroke?
-            </inferred_question_medium>
-            <inferred_question_short>
-I have severe long-standing back pain and now I started feeling dizzy yesterday, should I be concerned about a stroke?
-            </inferred_question_short>
-            <core_question>
-Should I be concerned about a stroke?
-            </core_question>
-        </raw_question_annotations_from_dr_arabi>
         <patient_narrative>
 I have central canal stenosis, compromise of the left paracentral thecal sac and left nerve root, facet hypertrophy/ligamentous flavum hypertrophy, bilateral inferior neural foraminal narrowing, and a paracentral disc protrusion. The pain presented in May and has worsened to its present state today. I can&#8217;t sleep, can&#8217;t sit up straight, can&#8217;t sit in my office chair at work for long periods, can&#8217;t even change my babies diaper without excruciating pain. The pain from sneezing and coughing is so bad I try to avoid doing this altogether. Now I walk with a limp at all times and my left leg is weak and the left foot is partially numb. Yesterday I started feeling dizzy throughout the day, almost passed out while sitting down. Dizziness has continued into today. Should I be concerned about a stroke?
         </patient_narrative>
@@ -313,20 +229,6 @@ Could her back pain and dizziness be concerning for a stroke?
         </clinician_question>
     </case>
     <case id="17">
-        <raw_question_annotations_from_dr_arabi>
-            <inferred_question_long>
-I had a total thyroidectomy and take levothyroxine. I went to the ER yesterday for palpitations and anxiety and had a full panel of tests, but was told my palpitations are benign. I had normal tests a year ago. What can I do to relieve my symptoms?
-            </inferred_question_long>
-            <inferred_question_medium>
-I had a total thyroidectomy and take levothyroxine. I went to the ER yesterday for palpitations and anxiety but was told my palpitations are benign. What can I do to relieve my symptoms?
-            </inferred_question_medium>
-            <inferred_question_short>
-What can I do to relieve palpitations and anxiety?
-            </inferred_question_short>
-            <core_question>
-What can I do?
-            </core_question>
-        </raw_question_annotations_from_dr_arabi>
         <patient_narrative>
 I spent yesterday in the ER with thumping heart beats i.e. palpitations. I had all blood work, a full panel, enzymes etc., EKG, chest x-ray, and TSH because I&#8217;ve had a total thyroidectomy. In October of last year, I had a walking stress test and all the same tests then, all of which are normal, showing no sign of any cardiac issues. My palpitations are benign, I&#8217;m told. Fine, how can I slow them or stop them without some antiarrhythmic meds? Of course, even though I&#8217;ve been told I&#8217;m fine, I feel them and sometimes worry which triggers the stress bug, then my chest gets tight, I have to take deep breaths to get out from under the stress. Is there anything I can do to relieve them? They really started when I started taking levothyroxine.
         </patient_narrative>
@@ -340,20 +242,6 @@ What should he do to relieve palpitations and anxiety?
         </clinician_question>
     </case>
     <case id="18">
-        <raw_question_annotations_from_dr_arabi>
-            <inferred_question_long>
-I was released from the hospital a week ago with no injuries after a tree hit my car. Now I have diarrhea and vomiting. Should I go back to the ER or wait for my doctor's appointment in a few days?
-            </inferred_question_long>
-            <inferred_question_medium>
-I was released from the hospital a week ago with no injuries after a tree hit my car. Now I have diarrhea and vomiting. Should I go back to the ER?
-            </inferred_question_medium>
-            <inferred_question_short>
-Should I go back to the ER if I have diarrhea and vomiting starting a week after a minor car accident?
-            </inferred_question_short>
-            <core_question>
-Should I go to the ER?
-            </core_question>
-        </raw_question_annotations_from_dr_arabi>
         <patient_narrative>
 1 week ago I was in a car accident. Now I have diarrhea and vomiting. it wasn&#8217;t a car that hit us, it was a big tree that went through our radiator and engine. I had neck pain at hospital.  I seemed fine, but now I am vomiting and have diarrhea. Should i go back to ER? I have dr&#8217;s appointment on Thursday.
         </patient_narrative>
@@ -367,20 +255,6 @@ Should he go back to the ER if he has diarrhea and vomiting?
         </clinician_question>
     </case>
     <case id="19">
-        <raw_question_annotations_from_dr_arabi>
-            <inferred_question_long>
-After an ER visit for a bladder infection, I started to feel anxiety and rapid heartbeat. I have a history of panic attacks, but could these symptoms all be due to anxiety or is something wrong with my heart?
-            </inferred_question_long>
-            <inferred_question_medium>
-After an ER visit for a bladder infection, I started to feel anxiety and rapid heartbeat. Could these symptoms all be due to anxiety or is something wrong with my heart?
-            </inferred_question_medium>
-            <inferred_question_short>
-Can anxiety cause my rapid heartbeat or is something wrong with my heart?
-            </inferred_question_short>
-            <core_question>
-Are my symptoms due to anxiety?
-            </core_question>
-        </raw_question_annotations_from_dr_arabi>
         <patient_narrative>
 I have a history of panic attacks. two weeks ago I went to ER for a bladder infection.  The doctor asked if I had irregular heartbeats or a-fib, which lead me getting very panicky. He decided to do an ekg, and it was normal, but after that day i keep thinking on it. now keep feeling rapid heartbeats and palpitations plus lot of chest discomfort. IT SCARES THE DAYLIGHTS of me. can all this be overthinking about what happened that day or can something be wrong with my heart ?
         </patient_narrative>
@@ -397,20 +271,6 @@ Are her symptoms related to anxiety or cardiovascular process?
         </clinician_question>
     </case>
     <case id="20">
-        <raw_question_annotations_from_dr_arabi>
-            <inferred_question_long>
-My sister was hospitalized for a headache and a room spinning sensation. She was told it was a migraine and was given sumatriptan. The headache has since improved but she is still dizzy. Could migraine cause such a spinning sensation?
-            </inferred_question_long>
-            <inferred_question_medium>
-My sister was hospitalized for a headache and a room spinning sensation, and was told it was a migraine. Could migraine cause such a spinning sensation?
-            </inferred_question_medium>
-            <inferred_question_short>
-Could migraine cause a spinning sensation?
-            </inferred_question_short>
-            <core_question>
-Can migraine cause a spinning sensation?
-            </core_question>
-        </raw_question_annotations_from_dr_arabi>
         <patient_narrative>
 Last week my 61 yr old sister woke up with a terrible headache and was not able to walk because she felt the room was spinning. She went to Intermountain Medical Center in Salt lake City, Utah and was admitted. After many tests, she was told she was having a migraine headache and was sent home with a prescription for sumatriptan. The headache has gotten better, but she is still very dizzy. So what is the dizziness from I never heard of a migraine that can cause your head to spin like that.
         </patient_narrative>
