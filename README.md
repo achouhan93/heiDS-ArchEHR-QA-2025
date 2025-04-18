@@ -2,6 +2,8 @@
 
 ## News
 
+* **April 17, 2025**: The scoring script is available under [evaluation](evaluation).
+* **April 11, 2025**: The test set is now available on [PhysioNet](https://doi.org/10.13026/zzax-sy62). Please check the release notes for more details.
 * **February 28, 2025**: An updated version (1.1) of the dataset, with some extraneous information removed, has been published on PhysioNet at [https://doi.org/10.13026/zzax-sy62](https://doi.org/10.13026/zzax-sy62). Please ensure you use the latest version of the dataset.
 * **February 26, 2025**: The full development set is now available on [PhysioNet](https://doi.org/10.13026/zzax-sy62).
 * **February 25, 2025**: We are releasing the development set patient cases with associated MIMIC note IDs instead of actual note excerpts (see [data/dev](data/dev)). We are working on making the full dataset with note excerpts available via PhysioNet as soon as possible.
@@ -156,10 +158,11 @@ Here, each dictionary in the JSON array has:
 
  
 # Evaluation
-(Tentative)
 
+See [evaluation](evaluation) for the scoring script.
 ​​
-The submissions will be evaluated for both the quality of generated answers and the use of clinical evidence for grounding. The evidence sentences cited in the generated answers will be evaluated using Precision, Recall, and F1 Scores using a manually annotated ground truth set of evidence sentences. The alignment of sentences in the generated answer with the cited evidence sentence(s) from the clinical notes will be assessed using ROUGE [5], BERTScore [6], AlignScore [7], and MEDCON [8]. For each submission, an "Overall Score" for alignment is reported as the arithmetic mean of alignment scores using different metrics.
+
+The submissions will be evaluated for both the quality of generated answers and the use of clinical evidence for grounding. The evidence sentences cited in the generated answers will be evaluated using Precision, Recall, and F1 Scores using a manually annotated ground truth set of evidence sentences. The alignment of sentences in the generated answer with the cited evidence sentence(s) from the clinical notes will be assessed using BLEU [5], ROUGE [6], SARI [7], BERTScore [8], AlignScore [9], and MEDCON [10]. For each submission, an "Overall Score" for alignment is reported as the arithmetic mean of alignment scores using different metrics.
 
 We do not enforce the use of any specific version of questions (patient or clinician) to generate answers; the participants can use one or both. Note that the entire clinical note excerpt provided in the dataset may not be required in order to generate a correct answer to the question. Thus, using all the sentences from the provided clinical note for grounding is not necessary. Furthermore, sentences in the generated answer may be supported using one, multiple, or none (unsupported) of the sentences from the clinical note. The unsupported sentences in the answer may be ignored during the quantitative evaluation. The answers should be in the professional register to better match the contents of the clinical notes. Simplification of answers to lay language is assumed to be performed later and is not the focus of this task.
 
@@ -195,8 +198,9 @@ This work was supported by the Division of Intramural Research (DIR) of the Nati
 2. Holmgren, A. J., Byron, M. E., Grouse, C. K., & Adler-Milstein, J. (2023). Association between billing patient portal messages as e-visits and patient messaging volume. Jama, 329(4), 339-342. https://doi.org/10.1001/jama.2022.24710
 3. Johnson, A., Pollard, T., & Mark, R. (2016). MIMIC-III Clinical Database (version 1.4). PhysioNet. https://doi.org/10.13026/C2XW26
 4. Johnson, A., Pollard, T., Horng, S., Celi, L. A., & Mark, R. (2023). MIMIC-IV-Note: Deidentified free-text clinical notes (version 2.2). PhysioNet. https://doi.org/10.13026/1n74-ne17
-5. Lin, C. Y. (2004, July). Rouge: A package for automatic evaluation of summaries. In Text summarization branches out (pp. 74-81). https://aclanthology.org/W04-1013/
-6. Zhang, T., Kishore, V., Wu, F., Weinberger, K. Q., & Artzi, Y. (2020). BERTScore: Evaluating Text Generation with BERT. International Conference on Learning Representations. https://openreview.net/forum?id=SkeHuCVFDr
-7. Zha, Y., Yang, Y., Li, R., & Hu, Z. (2023, July). AlignScore: Evaluating Factual Consistency with A Unified Alignment Function. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (pp. 11328-11348). https://doi.org/10.18653/v1/2023.acl-long.634
-8. Yim, W. W., Fu, Y., Ben Abacha, A., Snider, N., Lin, T., & Yetisgen, M. (2023). Aci-bench: a novel ambient clinical intelligence dataset for benchmarking automatic visit note generation. Scientific data, 10(1), 586. https://doi.org/10.1038/s41597-023-02487-3
-​
+5. Papineni, K., Roukos, S., Ward, T., & Zhu, W. J. (2002, July). Bleu: a method for automatic evaluation of machine translation. In Proceedings of the 40th annual meeting of the Association for Computational Linguistics (pp. 311-318). https://doi.org/10.3115/1073083.1073135
+6. Lin, C. Y. (2004, July). Rouge: A package for automatic evaluation of summaries. In Text summarization branches out (pp. 74-81). https://aclanthology.org/W04-1013/
+7. Xu, W., Napoles, C., Pavlick, E., Chen, Q., & Callison-Burch, C. (2016). Optimizing statistical machine translation for text simplification. Transactions of the Association for Computational Linguistics, 4, 401-415. https://aclanthology.org/Q16-1029/
+8. Zhang, T., Kishore, V., Wu, F., Weinberger, K. Q., & Artzi, Y. (2020). BERTScore: Evaluating Text Generation with BERT. International Conference on Learning Representations. https://openreview.net/forum?id=SkeHuCVFDr
+9. Zha, Y., Yang, Y., Li, R., & Hu, Z. (2023, July). AlignScore: Evaluating Factual Consistency with A Unified Alignment Function. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (pp. 11328-11348). https://doi.org/10.18653/v1/2023.acl-long.634
+10. Yim, W. W., Fu, Y., Ben Abacha, A., Snider, N., Lin, T., & Yetisgen, M. (2023). Aci-bench: a novel ambient clinical intelligence dataset for benchmarking automatic visit note generation. Scientific data, 10(1), 586. https://doi.org/10.1038/s41597-023-02487-3
