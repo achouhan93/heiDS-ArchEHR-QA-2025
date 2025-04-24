@@ -45,13 +45,12 @@ def load_submission(path, max_answer_words=75):
             line_parts = line.rsplit("|", maxsplit=2)
             if len(line_parts) < 3:
                 # No citations found
-                sent = line
+                sent = line.strip()
+                citations = []
             else:
-                sent = line_parts[-3]
-            sent = sent.strip()
-
-            citation_part = line_parts[-2]
-            citations = [c for c in citation_part.split(",") if c.strip()]
+                sent = line_parts[-3].strip()
+                citation_part = line_parts[-2]
+                citations = [c for c in citation_part.split(",") if c.strip()]
 
             # Add a period at the end of the sentence if it doesn't have one
             if sent and sent[-1] not in ".!?":
