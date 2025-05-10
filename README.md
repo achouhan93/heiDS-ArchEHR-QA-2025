@@ -1,36 +1,33 @@
-# ArchEHR-QA: BioNLP at ACL 2025 Shared Task on Grounded Electronic Health Record Question Answering
+# heiDS at ArchEHR-QA 2025: From Fixed-k to Query-dependent-k for Retrieval Augmented Generation
 
-## News
 
-* **April 17, 2025**: The scoring script is available under [evaluation](evaluation).
-* **April 11, 2025**: The test set is now available on [PhysioNet](https://doi.org/10.13026/zzax-sy62). Please check the release notes for more details.
-* **February 28, 2025**: An updated version (1.1) of the dataset, with some extraneous information removed, has been published on PhysioNet at [https://doi.org/10.13026/zzax-sy62](https://doi.org/10.13026/zzax-sy62). Please ensure you use the latest version of the dataset.
-* **February 26, 2025**: The full development set is now available on [PhysioNet](https://doi.org/10.13026/zzax-sy62).
-* **February 25, 2025**: We are releasing the development set patient cases with associated MIMIC note IDs instead of actual note excerpts (see [data/dev](data/dev)). We are working on making the full dataset with note excerpts available via PhysioNet as soon as possible.
+## Important
+
+* Link for the shared task: [BioNLP @ACL 2025 Shared Task on grounded question answering (QA) from electronic health records (EHRs)](https://archehr-qa.github.io/).
+* The dataset for the shared task is available on [PhysioNet](https://doi.org/10.13026/zzax-sy62). 
+* The proposed pipeline is present under [notebook](notebook).
+* The scoring script is available under [evaluation](evaluation).
+
+## Abstract
+
+As part of the participation of the heiDS team in the ArchEHR-QA 2025 shared task, we present a pipeline utilizing a retrieval-augmented generation (RAG) framework designed to generate answers that are attributed to clinical evidence from patients' electronic health records (EHRs) in response to patient-specific questions. We explored various components of a RAG framework, focusing  on ranked list truncation (RLT) retrieval strategies and  attribution approaches. Instead of using a fixed top-$k$ RLT retrieval strategy, we employ the autocut*, surprise, and elbow methods, which allow for a query-dependent-k retrieval to construct an answer. Our results show the benefits of this strategy in producing factual and relevant answers when compared to a fixed-k.
+
+
+# Original README: ArchEHR-QA: BioNLP at ACL 2025 Shared Task on Grounded Electronic Health Record Question Answering
 
 ## Abstract
 
 Responding to patients’ medical inbox messages through patient portals is one of the main contributors to increasing clinician burden. To this end, automatically generating answers to questions from patients considering their medical records is important. The overarching goal of the ArchEHR-QA 2025 shared task is to develop automated responses to patients' questions by generating answers that are grounded in key clinical evidence from their electronic health records (EHRs). The proposed dataset, ArchEHR-QA, comprises hand-curated, realistic patient questions (reflective of patient portal messages), relevant focus areas identified within these questions (as determined by a clinician), corresponding clinician-rewritten versions (crafted to aid in formulating responses), and note excerpts providing essential clinical context. The task is to construct coherent answers to input questions that must be grounded in the provided clinical note excerpts.
 
-# Objective
+## Objective
 
 The volume of messages on the patient portals is on the rise, which includes requests for medical information from clinicians [1, 2]. This is one of the main contributors to desktop medicine and increasing clinician burden. One approach to handling the increasing messaging burden is to assist clinicians in formulating the responses. Thus, the primary objective of the challenge is to automatically respond to input patient questions by constructing coherent answers that must only be based on and grounded in the associated clinical note excerpts.
 
-With the proposed dataset and the task, we aim to foster research toward automatically responding to patient messages using EHR data. The ArchEHR-QA dataset will serve as a strong benchmark for developing and evaluating systems for the task.
-
-# Participation
-
-Submissions of system responses will be made through the Codabench platform. Participants must register on the shared task's Codabench competition page. Timeline and other participation information are available on the shared task website: https://archehr-qa.github.io
-
-All shared task participants are invited to submit a paper describing their systems to the Proceedings of the 24th Workshop on Biomedical Natural Language Processing (BioNLP) at ACL 2025. Only short papers will be accepted for shared task participants. The shared task papers will go through a faster review process. All submissions will go through START at https://softconf.com/acl2025/BioNLP2025-ST. Every participant, regardless of whether they submit a paper, must send a short one-paragraph summary describing their best-performing system to sarvesh.soni@nih.gov. Submissions without this summary will not be included on the leaderboard or in the shared task overview paper.
-
-# Data Description
+## Data Description
 ​
 The dataset consists of questions (inspired by real patient questions) and associated EHR data (derived from MIMIC-III [3] and MIMIC-IV [4] databases) containing important clinical evidence to answer these questions. Each instance of the question-note pairs is referred to as a "case". Clinical note excerpts come pre-annotated with sentence numbers which must be used to cite the clinical evidence sentences in system responses. Each sentence is manually annotated with a "relevance" label to mark its importance in answering the given question as `"essential"`, `"supplementary"`, or `"not-relevant"`.
 
-The development set comes with the relevance keys. For the test set cases, the submissions should return a natural language answer with citations to the clinical note sentence numbers.
-
-The development set contains a total of 20 patient cases.
+The development set contains a total of 20 patient cases, and test set contains a total of 100 patient cases.
 
 ## Format
 
@@ -157,14 +154,11 @@ Here, each dictionary in the JSON array has:
 * `"document_source"`: version of the mimic database this note was sourced from
 
  
-# Evaluation
+## Evaluation
 
 See [evaluation](evaluation) for the scoring script.
-​​
 
 The submissions will be evaluated for both the quality of generated answers and the use of clinical evidence for grounding. The evidence sentences cited in the generated answers will be evaluated using Precision, Recall, and F1 Scores using a manually annotated ground truth set of evidence sentences. The alignment of sentences in the generated answer with the cited evidence sentence(s) from the clinical notes will be assessed using BLEU [5], ROUGE [6], SARI [7], BERTScore [8], AlignScore [9], and MEDCON [10]. For each submission, an "Overall Score" for alignment is reported as the arithmetic mean of alignment scores using different metrics.
-
-We do not enforce the use of any specific version of questions (patient or clinician) to generate answers; the participants can use one or both. Note that the entire clinical note excerpt provided in the dataset may not be required in order to generate a correct answer to the question. Thus, using all the sentences from the provided clinical note for grounding is not necessary. Furthermore, sentences in the generated answer may be supported using one, multiple, or none (unsupported) of the sentences from the clinical note. The unsupported sentences in the answer may be ignored during the quantitative evaluation. The answers should be in the professional register to better match the contents of the clinical notes. Simplification of answers to lay language is assumed to be performed later and is not the focus of this task.
 
 ## Submission
 
@@ -186,11 +180,6 @@ The following is an example `submission.json`.
     ...
 ]
 ```
-
-## Acknowledgements
-
-This work was supported by the Division of Intramural Research (DIR) of the National Library of Medicine (NLM), National Institutes of Health, and utilized the computational resources of the NIH HPC Biowulf cluster (https://hpc.nih.gov). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
-
 
 ## References
 
