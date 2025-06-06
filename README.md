@@ -1,19 +1,79 @@
-# heiDS at ArchEHR-QA 2025: From Fixed-k to Query-dependent-k for Retrieval Augmented Generation
+<a name="readme-top"></a>
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks](https://img.shields.io/github/forks/achouhan93/heiDS-ArchEHR-QA-2025.svg?style=for-the-badge)](https://github.com/achouhan93/heiDS-ArchEHR-QA-2025/forks)
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-## Important
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025">
+    <img src="images/cutting.png" alt="Logo" width="80" height="80">
+  </a>
 
-* Link for the shared task: [BioNLP @ACL 2025 Shared Task on grounded question answering (QA) from electronic health records (EHRs)](https://archehr-qa.github.io/).
-* The dataset for the shared task is available on [PhysioNet](https://doi.org/10.13026/zzax-sy62). 
-* The proposed pipeline is present under [notebook](notebook).
-* The scoring script is available under [evaluation](evaluation).
+  <h3 align="center">heiDS at ArchEHR-QA 2025: From Fixed-k to Query-dependent-k for Retrieval Augmented Generation</h3>
 
-## Abstract
+  <p align="center">
+    Ashish Chouhan and Michael Gertz<br/>
+    Data Science Group, Institute of Computer Science<br/>
+    Heidelberg University, Germany<br/>
 
-As part of the participation of the heiDS team in the ArchEHR-QA 2025 shared task, we present a pipeline utilizing a retrieval-augmented generation (RAG) framework designed to generate answers that are attributed to clinical evidence from patients' electronic health records (EHRs) in response to patient-specific questions. We explored various components of a RAG framework, focusing  on ranked list truncation (RLT) retrieval strategies and  attribution approaches. Instead of using a fixed top-$k$ RLT retrieval strategy, we employ the autocut*, surprise, and elbow methods, which allow for a query-dependent-k retrieval to construct an answer. Our results show the benefits of this strategy in producing factual and relevant answers when compared to a fixed-k.
+    Contact us at: <a href="mailto:chouhan@informatik.uni-heidelberg.de">{chouhan, gertz}@informatik.uni-heidelberg.de</a> 
+    <a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025/issues">Report Bug</a> · 
+    <a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025/issues">Request Feature</a>
+  </p>
+</div>
 
+---
 
-# Original README: ArchEHR-QA: BioNLP at ACL 2025 Shared Task on Grounded Electronic Health Record Question Answering
+## Table of Contents
+
+- [About The Project](#about-the-project)
+  - [Abstract](#abstract)
+  - [System Workflow](#system-workflow)
+- [ArchEHR-QA Overview](#archehr-qa-overview)
+  - [Objective](#objective)
+  - [Data Description](#data-description)
+  - [Data Format](#format)
+  - [Evaluation](#evaluation)
+- [Getting Started](#getting-started)
+  - [Environment Setup](#environment-setup)
+  - [Running the Pipeline](#running-the-pipeline)
+- [Experimentation](#experimentation)
+- [Submission Format](#submission-format)
+- [Acknowledgments](#acknowledgments)
+- [References](#references)
+- [License](#license)
+
+---
+
+## 📌 About The Project
+
+This repository contains the implementation of the **heiDS** team, a pipeline developed for the **ArchEHR-QA 2025 Shared Task on Grounded Electronic Health Record Question Answering**, part of the BioNLP Workshop at ACL 2025. The project aims to generate grounded, evidence-based answers to patient questions using clinical note excerpts from EHRs.
+
+- 🔗 [ArchEHR-QA Shared Task Website](https://archehr-qa.github.io/)
+- 📚 Dataset Access: [PhysioNet DOI](https://doi.org/10.13026/zzax-sy62)
+
+### Abstract
+This paper presents the approach of our team called heiDS for the ArchEHR-QA 2025 shared task. A pipeline using a retrieval augmented generation (RAG) framework is designed to generate answers that are attributed to clinical evidence from the electronic health records (EHRs) of patients  in response to patient-specific questions. We explored various components of a RAG framework, focusing  on ranked list truncation (RLT) retrieval strategies and  attribution approaches. Instead of using a fixed top-k RLT retrieval strategy, we employ a query-dependent-k retrieval strategy, including the existing surprise and autocut methods and two new methods proposed in this work, autocut* and elbow. The experimental results show the benefits of our strategy in producing factual and relevant answers when compared to a fixed-k.
+
+---
+
+### ⚙️ System Workflow
+
+1. **XML Parsing**: Extract questions and clinical note sentences from patient case XML.
+2. **Sentence Indexing**: Encode and index sentences using dense retrieval (FAISS).
+3. **Retrieval**: Top-k and query-dependent sentence selection (surprise, autocut, autocut*, elbow).
+4. **Re-ranking**: Optional with FlashRank or Cohere APIs.
+5. **Generation**: LLM-based answer generation (Models: Mixtral and LLaMA-3.3-70B, Prompting approach: zero-shot and one-shot prompting).
+6. **Attribution**: Cite note evidence (e.g., `|2,3|`) using structured formats.
+
+---
+
+# 📖 ArchEHR-QA Overview
+[Original README: ArchEHR-QA: BioNLP at ACL 2025 Shared Task on Grounded Electronic Health Record Question Answering](https://github.com/soni-sarvesh/archehr-qa/blob/main/README.md)
 
 ## Abstract
 
@@ -170,70 +230,31 @@ Submitted responses for each case must include one sentence per line with the c
 > The extended recovery time and hospital stay were necessary due to the severity of the rupture and the complexity of the surgery, though his wound is now healing well with only a small open area noted. |8|
 
 The following is an example `submission.json`.
-<a name="readme-top"></a>
+```json
+[
+  {
+    "case_id": "1",
+    "answer": "The patient was admitted for emergent repair of thoracoabdominal aneurysm. |1| ..."
+  }
+]
+```
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks](https://img.shields.io/github/forks/achouhan93/heiDS-ArchEHR-QA-2025.svg?style=for-the-badge)](https://github.com/achouhan93/heiDS-ArchEHR-QA-2025/forks)
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+## Acknowledgments
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025">
-    <img src="images/cutting.png" alt="Logo" width="80" height="80">
-  </a>
+This work was supported by the Division of Intramural Research (DIR) of the National Library of Medicine (NLM), National Institutes of Health, and utilized the computational resources of the NIH HPC Biowulf cluster (https://hpc.nih.gov). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
 
-  <h3 align="center">heiDS at ArchEHR-QA 2025: From Fixed-k to Query-dependent-k for Retrieval Augmented Generation</h3>
+## References
 
-  <p align="center">
-    Ashish Chouhan and Michael Gertz
-
-    Data Science Group, Institute of Computer Science
-
-    Heidelberg University, Germany
-
-    Contact us at: [`{chouhan, gertz}@informatik.uni-heidelberg.de`](mailto:chouhan@informatik.uni-heidelberg.de) 
-    <a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025/issues">Report Bug</a> · 
-    <a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025/issues">Request Feature</a>
-  </p>
-</div>
-
----
-
-## Table of Contents
-
-- [About The Project](#about-the-project)
-  - [Abstract](#abstract)
-  - [System Workflow](#system-workflow)
-- [Getting Started](#getting-started)
-  - [Environment Setup](#environment-setup)
-  - [Running the Pipeline](#running-the-pipeline)
-- [Experimentation](#experimentation)
-- [Submission Format](#submission-format)
-- [Acknowledgments](#acknowledgments)
-- [References](#references)
-- [License](#license)
-
----
-
-## 📌 About The Project
-
-This repository contains the implementation of the **heiDS pipeline**, a system developed for the **ArchEHR-QA 2025 Shared Task on Grounded Electronic Health Record Question Answering**, part of the BioNLP Workshop at ACL 2025.
-
-### Abstract
-
-The ArchEHR-QA task focuses on generating factual, evidence-grounded answers to patient-specific questions based on structured electronic health records. The **heiDS-QA** system addresses this through robust note retrieval and large language model-based generation. In particular, our submission explores dynamic, query-dependent selection of top-\(k\) evidence sentences, instead of static retrieval, to improve grounding and answer precision.
-
-### System Workflow
-
-1. Parse EHR case XML and extract questions and note fragments.
-2. Embed and index sentences using dense retrieval (FAISS).
-3. Retrieve top-k sentences with options for dynamic selection and re-ranking.
-4. Generate grounded answers using instruction-tuned LLMs.
-5. Attribute answer content to evidence using structured citation (e.g., `|1|`).
-
+1. Martinez, K. A., Schulte, R., Rothberg, M. B., Tang, M. C., & Pfoh, E. R. (2024). Patient portal message volume and time spent on the EHR: an observational study of primary care clinicians. Journal of General Internal Medicine, 39(4), 566-572. https://doi.org/10.1007/s11606-023-08577-7
+2. Holmgren, A. J., Byron, M. E., Grouse, C. K., & Adler-Milstein, J. (2023). Association between billing patient portal messages as e-visits and patient messaging volume. Jama, 329(4), 339-342. https://doi.org/10.1001/jama.2022.24710
+3. Johnson, A., Pollard, T., & Mark, R. (2016). MIMIC-III Clinical Database (version 1.4). PhysioNet. https://doi.org/10.13026/C2XW26
+4. Johnson, A., Pollard, T., Horng, S., Celi, L. A., & Mark, R. (2023). MIMIC-IV-Note: Deidentified free-text clinical notes (version 2.2). PhysioNet. https://doi.org/10.13026/1n74-ne17
+5. Papineni, K., Roukos, S., Ward, T., & Zhu, W. J. (2002, July). Bleu: a method for automatic evaluation of machine translation. In Proceedings of the 40th annual meeting of the Association for Computational Linguistics (pp. 311-318). https://doi.org/10.3115/1073083.1073135
+6. Lin, C. Y. (2004, July). Rouge: A package for automatic evaluation of summaries. In Text summarization branches out (pp. 74-81). https://aclanthology.org/W04-1013/
+7. Xu, W., Napoles, C., Pavlick, E., Chen, Q., & Callison-Burch, C. (2016). Optimizing statistical machine translation for text simplification. Transactions of the Association for Computational Linguistics, 4, 401-415. https://aclanthology.org/Q16-1029/
+8. Zhang, T., Kishore, V., Wu, F., Weinberger, K. Q., & Artzi, Y. (2020). BERTScore: Evaluating Text Generation with BERT. International Conference on Learning Representations. https://openreview.net/forum?id=SkeHuCVFDr
+9. Zha, Y., Yang, Y., Li, R., & Hu, Z. (2023, July). AlignScore: Evaluating Factual Consistency with A Unified Alignment Function. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (pp. 11328-11348). https://doi.org/10.18653/v1/2023.acl-long.634
+10. Yim, W. W., Fu, Y., Ben Abacha, A., Snider, N., Lin, T., & Yetisgen, M. (2023). Aci-bench: a novel ambient clinical intelligence dataset for benchmarking automatic visit note generation. Scientific data, 10(1), 586. https://doi.org/10.1038/s41597-023-02487-3
 ---
 
 ## 🚀 Getting Started
@@ -299,27 +320,9 @@ main(pipeline_config, generation_config)
 
 ## Submission Format
 
-```json
-[
-  {
-    "case_id": "1",
-    "answer": "The patient was admitted for emergent repair of thoracoabdominal aneurysm. |1| ..."
-  }
-]
-```
 
-## References
 
-1. Martinez, K. A., Schulte, R., Rothberg, M. B., Tang, M. C., & Pfoh, E. R. (2024). Patient portal message volume and time spent on the EHR: an observational study of primary care clinicians. Journal of General Internal Medicine, 39(4), 566-572. https://doi.org/10.1007/s11606-023-08577-7
-2. Holmgren, A. J., Byron, M. E., Grouse, C. K., & Adler-Milstein, J. (2023). Association between billing patient portal messages as e-visits and patient messaging volume. Jama, 329(4), 339-342. https://doi.org/10.1001/jama.2022.24710
-3. Johnson, A., Pollard, T., & Mark, R. (2016). MIMIC-III Clinical Database (version 1.4). PhysioNet. https://doi.org/10.13026/C2XW26
-4. Johnson, A., Pollard, T., Horng, S., Celi, L. A., & Mark, R. (2023). MIMIC-IV-Note: Deidentified free-text clinical notes (version 2.2). PhysioNet. https://doi.org/10.13026/1n74-ne17
-5. Papineni, K., Roukos, S., Ward, T., & Zhu, W. J. (2002, July). Bleu: a method for automatic evaluation of machine translation. In Proceedings of the 40th annual meeting of the Association for Computational Linguistics (pp. 311-318). https://doi.org/10.3115/1073083.1073135
-6. Lin, C. Y. (2004, July). Rouge: A package for automatic evaluation of summaries. In Text summarization branches out (pp. 74-81). https://aclanthology.org/W04-1013/
-7. Xu, W., Napoles, C., Pavlick, E., Chen, Q., & Callison-Burch, C. (2016). Optimizing statistical machine translation for text simplification. Transactions of the Association for Computational Linguistics, 4, 401-415. https://aclanthology.org/Q16-1029/
-8. Zhang, T., Kishore, V., Wu, F., Weinberger, K. Q., & Artzi, Y. (2020). BERTScore: Evaluating Text Generation with BERT. International Conference on Learning Representations. https://openreview.net/forum?id=SkeHuCVFDr
-9. Zha, Y., Yang, Y., Li, R., & Hu, Z. (2023, July). AlignScore: Evaluating Factual Consistency with A Unified Alignment Function. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (pp. 11328-11348). https://doi.org/10.18653/v1/2023.acl-long.634
-10. Yim, W. W., Fu, Y., Ben Abacha, A., Snider, N., Lin, T., & Yetisgen, M. (2023). Aci-bench: a novel ambient clinical intelligence dataset for benchmarking automatic visit note generation. Scientific data, 10(1), 586. https://doi.org/10.1038/s41597-023-02487-3
+
 
 - [ArchEHR-QA](https://archehr-qa.github.io)
 - [MIMIC-III](https://doi.org/10.13026/C2XW26)
