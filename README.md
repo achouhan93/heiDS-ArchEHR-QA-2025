@@ -5,25 +5,29 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+![Visitors](https://api.visitorbadge.io/api/VisitorHit?user=achouhan93&repo=heiDS-ArchEHR-QA-2025&countColor=%237B1E7A)
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025">
+<a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025">
     <img src="images/cutting.png" alt="Logo" width="80" height="80">
-  </a>
+</a>
 
-  <h3 align="center">heiDS at ArchEHR-QA 2025: From Fixed-k to Query-dependent-k for Retrieval Augmented Generation</h3>
+<h3 align="center">heiDS at ArchEHR-QA 2025: From Fixed-k to Query-dependent-k for Retrieval Augmented Generation</h3>
 
-  <p align="center">
-    Ashish Chouhan and Michael Gertz<br/>
-    Data Science Group, Institute of Computer Science<br/>
-    Heidelberg University, Germany<br/>
+<p align="center">
+Ashish Chouhan and Michael Gertz
 
-    Contact us at: <a href="mailto:chouhan@informatik.uni-heidelberg.de">{chouhan, gertz}@informatik.uni-heidelberg.de</a> 
-    <a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025/issues">Report Bug</a> · 
-    <a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025/issues">Request Feature</a>
-  </p>
+Data Science Group, Institute of Computer Science
+
+Heidelberg University, Germany
+
+Contact us at: [`{chouhan, gertz}@informatik.uni-heidelberg.de`](mailto:chouhan@informatik.uni-heidelberg.de)
+
+<a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025/issues">Report Bug</a> · 
+<a href="https://github.com/achouhan93/heiDS-ArchEHR-QA-2025/issues">Request Feature</a>
+</p>
 </div>
 
 ---
