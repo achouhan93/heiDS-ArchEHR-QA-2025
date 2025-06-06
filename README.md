@@ -37,19 +37,19 @@ Contact us at: [`{chouhan, gertz}@informatik.uni-heidelberg.de`](mailto:chouhan@
 - [About The Project](#about-the-project)
   - [Abstract](#abstract)
   - [System Workflow](#system-workflow)
-- [ArchEHR-QA Overview](#archehr-qa-overview)
+- [Getting Started](#getting-started)
+  - [Environment Setup](#environment-setup)
+  - [Running the Pipeline](#running-the-pipeline)
+  - [License](#license)
+- [Original README: ArchEHR-QA](#archehr-qa-overview)
+  - [Abstract](#abstract-1)
   - [Objective](#objective)
   - [Data Description](#data-description)
   - [Data Format](#format)
   - [Evaluation](#evaluation)
-- [Getting Started](#getting-started)
-  - [Environment Setup](#environment-setup)
-  - [Running the Pipeline](#running-the-pipeline)
-- [Experimentation](#experimentation)
-- [Submission Format](#submission-format)
-- [Acknowledgments](#acknowledgments)
-- [References](#references)
-- [License](#license)
+  - [Submission Format](#submission-format)
+  - [Acknowledgments](#acknowledgments)
+  - [References](#references)
 
 ---
 
@@ -101,7 +101,7 @@ cohere_key = userdata.get('COHERE_API_KEY')
 
 ## Running the Pipeline
 
-Clone and navigate to the repository. The main script is `heiDS_archehr-qa-pipeline.ipynb`.
+Clone and navigate to the repository. The pipeline is designed in a jupyter notebook `heiDS_archehr-qa-pipeline.ipynb` in the [notebook](notebook) folder. Follow the execution steps present in the notebook inorder to reproduce the results.
 
 ### Development Evaluation
 
@@ -129,15 +129,15 @@ main(pipeline_config, generation_config)
 
 ## Experimentation
 
-- **Retrieval**: Top-k (static), dynamic-k (surprise, autocut, elbow), re-ranking (FlashRank, Cohere)
-- **Generation**: Prompting styles (zero/one-shot), generation and citation methods (pre/post)
+- **Retrieval**: Top-k (static), dynamic-k (surprise, autocut, autocut*, elbow), re-ranking (FlashRank, Cohere)
+- **Generation**: Prompting styles (zero/one-shot), models ([LLaMA-3.3-70B](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct), [Mixtral-8x7B](https://huggingface.co/mistralai/Mixtral-8x7B-v0.1)) and attribution approaches (pre/post)
 - **Evaluation**: Precision, Recall, F1 for retrieval; automatic citation inclusion and semantic attribution
 
 ---
 
 ## License
 
-The software in this repository is released under the [MIT License](LICENSE). Please refer to the license file for details.
+The code in this work is licensed under the [MIT License](LICENSE). Please refer to the license file for details. The datasets used in this repository are distributed by the ArchEHR-QA 2025 Shared Task Organizers. Their use is governed by the terms and conditions provided by the organizers.Refer to the official [ArchEHR-QA website](https://archehr-qa.github.io/) for dataset licensing and access details.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/achouhan93/heiDS-ArchEHR-QA-2025.svg?style=for-the-badge
