@@ -34,20 +34,20 @@ Contact us at: [`{chouhan, gertz}@informatik.uni-heidelberg.de`](mailto:chouhan@
 
 ## Table of Contents
 
-- [About The Project](#about-the-project)
+- [About The Project](#-about-the-project)
   - [Abstract](#abstract)
-  - [System Workflow](#system-workflow)
-- [Getting Started](#getting-started)
-  - [Environment Setup](#environment-setup)
+  - [System Workflow](#%EF%B8%8F-system-workflow)
+- [Getting Started](#-getting-started)
+  - [Environment Setup](#-environment-setup)
   - [Running the Pipeline](#running-the-pipeline)
   - [License](#license)
-- [Original README: ArchEHR-QA](#archehr-qa-overview)
+- [Original README: ArchEHR-QA](#-original-readme-archehr-qa-bionlp-at-acl-2025-shared-task-on-grounded-electronic-health-record-question-answering)
   - [Abstract](#abstract-1)
   - [Objective](#objective)
   - [Data Description](#data-description)
   - [Data Format](#format)
   - [Evaluation](#evaluation)
-  - [Submission Format](#submission-format)
+  - [Submission Format](#submission)
   - [Acknowledgments](#acknowledgments)
   - [References](#references)
 
@@ -82,7 +82,7 @@ This paper presents the approach of our team called heiDS for the ArchEHR-QA 202
 pip install -qU \
   langchain-community langchain-huggingface huggingface_hub langchain-core faiss-gpu-cu11 \
   flashrank cohere langchain_cohere ruptures evaluate bert_score fuzzywuzzy rouge_score \
-  "numpy<2.0.0" "transformers==4.37.0" context-cite
+  "numpy<2.0.0" "transformers==4.37.0"
 ```
 
 ```bash
@@ -130,7 +130,7 @@ main(pipeline_config, generation_config)
 ## Experimentation
 
 - **Retrieval**: Top-k (static), dynamic-k (surprise, autocut, autocut*, elbow), re-ranking (FlashRank, Cohere)
-- **Generation**: Prompting styles (zero/one-shot), models ([LLaMA-3.3-70B](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct), [Mixtral-8x7B](https://huggingface.co/mistralai/Mixtral-8x7B-v0.1)) and attribution approaches (pre/post)
+- **Generation**: Prompting styles (zero/one-shot), models ([LLaMA-3.3-70B](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)/[Mixtral-8x7B](https://huggingface.co/mistralai/Mixtral-8x7B-v0.1)) and attribution approaches (pre/post)
 - **Evaluation**: Precision, Recall, F1 for retrieval; automatic citation inclusion and semantic attribution
 
 ---
