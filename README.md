@@ -59,6 +59,28 @@ This repository contains the implementation of the **heiDS** team, a pipeline de
 
 - 🔗 [ArchEHR-QA Shared Task Website](https://archehr-qa.github.io/)
 - 📚 Dataset Access: [PhysioNet DOI](https://doi.org/10.13026/zzax-sy62)
+- Arxiv version of the paper: [here](https://arxiv.org/abs/2506.19512)
+
+In case you find the results and approach useful, kindly consider citing our work along with the shared task paper (see below):
+```
+@inproceedings{chouhan-gertz-2025-heids,
+    title = "hei{DS} at {A}rch{EHR}-{QA} 2025: From Fixed-k to Query-dependent-k for Retrieval Augmented Generation",
+    author = "Chouhan, Ashish  and
+      Gertz, Michael",
+    editor = "Soni, Sarvesh  and
+      Demner-Fushman, Dina",
+    booktitle = "Proceedings of the 24th Workshop on Biomedical Language Processing (Shared Tasks)",
+    month = aug,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.bionlp-share.6/",
+    pages = "50--61",
+    ISBN = "979-8-89176-276-3",
+    abstract = "This paper presents the approach of our team called heiDS for the ArchEHR-QA 2025 shared task. A pipeline using a retrieval augmented generation (RAG) framework is designed to generate answers that are attributed to clinical evidence from the electronic health records (EHRs) of patients in response to patient-specific questions. We explored various components of a RAG framework, focusing on ranked list truncation (RLT) retrieval strategies and attribution approaches. Instead of using a fixed top-k RLT retrieval strategy, we employ a query-dependent-k retrieval strategy, including the existing surprise and autocut methods and two new methods proposed in this work, autocut* and elbow. The experimental results show the benefits of our strategy in producing factual and relevant answers when compared to a fixed-k."
+}
+```
+
 
 ### Abstract
 This paper presents the approach of our team called heiDS for the ArchEHR-QA 2025 shared task. A pipeline using a retrieval augmented generation (RAG) framework is designed to generate answers that are attributed to clinical evidence from the electronic health records (EHRs) of patients  in response to patient-specific questions. We explored various components of a RAG framework, focusing  on ranked list truncation (RLT) retrieval strategies and  attribution approaches. Instead of using a fixed top-k RLT retrieval strategy, we employ a query-dependent-k retrieval strategy, including the existing surprise and autocut methods and two new methods proposed in this work, autocut* and elbow. The experimental results show the benefits of our strategy in producing factual and relevant answers when compared to a fixed-k.
